@@ -5,6 +5,7 @@ public class FindingTheHypotenuse {
         double a, b, c, u, cevre, alan;
       Scanner inp = new Scanner(System.in);
        /*
+       // Dik Üçgende Alan hesabı
         System.out.print("Karşı Keranı giriniz: ");
           a = inp.nextDouble();
 
@@ -14,6 +15,8 @@ public class FindingTheHypotenuse {
         c = Math.sqrt((a*a) + (b*b));
         System.out.println("Hipotenüs: " + c);
         */
+
+
         //üçgenin tümkenarlarını kullanıcan aldık
         System.out.print("Birinci Kenarı giriniz: ");
         a = inp.nextDouble();
@@ -26,9 +29,11 @@ public class FindingTheHypotenuse {
 
         // Üçgenin çevresini ve alanının formülünü hesaplayacak aşağıdaki kod.
 
-        u = (a + b + c)/2;
+        u = (a + b + c)/2; // Üçgen Çevresinin yarısını hesapla
         cevre = 2*u;
-        alan = Math.sqrt(u * (u - a) * (u - b) * (u - c));
+        alan = Math.sqrt(u * (u - a) * (u - b) * (u - c)); // Math.sqrt() -> Math sınıfına aittir ve karekök almaya yarar.
+
+        // Sonuç Çıktıları Alındı
         System.out.println("Üçgenin Çevresi: " + cevre);
         System.out.println("Üçgenin Alanı: "+ alan);
 
