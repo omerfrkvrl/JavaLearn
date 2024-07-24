@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class ElementFrequencyArray {
 
     public static void main(String[] args) {
@@ -11,11 +13,16 @@ public class ElementFrequencyArray {
                     if (list[i] == list[j]) {
                         n++;
                         checked[j] = true;
+
                     }
                 }
                 System.out.println(list[i] + " sayısı " + n + " kere tekrar edildi.");
                 n = 0;
+
+
+
             }
+
         }
     }
 }
